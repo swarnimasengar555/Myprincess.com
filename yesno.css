@@ -1,0 +1,71 @@
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  text-align: center;
+  background: linear-gradient(to bottom right, #ff9a9e, #fad0c4);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.container, .hidden-content {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+}
+
+h1, h2 {
+  color: #ff4081;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.yes-btn, .no-btn, .btn {
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  transition: transform 0.2s ease;
+}
+
+.yes-btn:hover, .no-btn:hover, .btn:hover {
+  transform: scale(1.1);
+}
+
+/* Back button */
+.back-btn {
+  background-color: #ffc107;
+  margin-top: 15px;
+}
+
+/* Hide extra content initially */
+.hidden-content {
+  display: none;
+}
+
+/* Floating sparkles animation */
+body::after {
+  content: "✨ ✨ ✨ ✨";
+  font-size: 30px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: floatSparkles 5s infinite linear;
+}
+
+@keyframes floatSparkles {
+  0% { transform: translateY(0) translateX(-50%); }
+  50% { transform: translateY(-20px) translateX(-50%); }
+  100% { transform: translateY(0) translateX(-50%); }
+}

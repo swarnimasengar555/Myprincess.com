@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stay With Me?</title>
+  <link rel="stylesheet" href="yesno.css">
+</head>
+<body>
+
+  <div class="container" id="main-content">
+    <h1>Will you stay with me Princess? </h1>
+    <div class="buttons">
+      <button class="yes-btn" onclick="showYes()">Yea! </button>
+      <button class="no-btn" onclick="showNo()">No... </button>
+    </div>
+    <button onclick="goBack()" class="btn back-btn">⬅️ Back</button>
+  </div>
+
+  <div class="hidden-content" id="yes-content">
+    <h2>Dear  Pretty Princess, </h2>
+    <p>
+      I'm so happy you chose to stay!  
+      Every moment with you is special, and I can't wait to create even more toofani memories together.  
+      !.When we first met on 7Cups, I had no idea that you would become such a big big part of my life Princess. 
+      But here we are hehe,I wouldn’t have it any other way. You are really admirable,with you, I never have to wear a mask,I can just be myself.
+      You are the most amazing, coolest person I have ever met online. Thank you for being you, for making my days happier,for just existing ,for promising me you will buy me 5 yummy buns filled with fruit jam and butter,
+      for telling me you would hold my hand even if i'm having hyperhidrosis and for letting me keep you heart with me:)!.
+    </p>
+    <p>Peace, Me(Agent S). </p>
+    <button onclick="reset()" class="btn">Back to Gift 🎁</button>
+  </div>
+
+  <div class="hidden-content" id="no-content">
+    <h2>Ohlala! 😏</h2>
+    <p>
+      I know you clicked on "No" just to check what will happen! Hehe   
+      Now go back and select "Yes" like my good Princess :-)! 
+    </p>
+    <button onclick="reset()" class="btn">Back to Gift 🎁</button>
+  </div>
+
+  <script>
+    function showYes() {
+      document.getElementById("main-content").style.display = "none";
+      document.getElementById("yes-content").style.display = "block";
+    }
+
+    function showNo() {
+      document.getElementById("main-content").style.display = "none";
+      document.getElementById("no-content").style.display = "block";
+    }
+
+    function reset() {
+      document.getElementById("main-content").style.display = "block";
+      document.getElementById("yes-content").style.display = "none";
+      document.getElementById("no-content").style.display = "none";
+    }
+
+    function goBack() {
+      window.location.href = "gift.html"; // Change this if the filename is different
+    }
+  </script>
+
+</body>
+</html>
+
+
+
+

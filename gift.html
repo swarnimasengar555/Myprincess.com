@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surprise Gift for You!</title>
+  <link rel="stylesheet" href="gift.css">
+</head>
+<body>
+
+<!-- Background Music -->
+<audio id="bg-music" loop>
+  <source src="PrincessMusic.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+
+<div class="container">
+  <h1>Surpriseeee!!! 🎁</h1>
+  <p>Hey my favourite Smarty Nerdy Pretty Shakespeare, Partner, Batman, Tall Princess! 
+     You make me soo soo happy! 
+     I hope this lil gift of mine could bring a smile to your face (secretly hoping for a big smile )</p>
+  
+  <img src="https://media.giphy.com/media/LkU3PZ9e68d5a1EYTv/giphy.gif?cid=790b76110n8ivfnmu3abkj5rp7psk0bup6f02iw8xbu5jclk&ep=v1_gifs_search&rid=giphy.gif&ct=g" 
+      alt="Cute Batman" class="friend-gif">
+
+  <p class="love-note">Never forget how special you are!  
+     This page will always remind you of how amazing and important you are for me Princess!</p>
+
+  <button class="btn" onclick="window.location.href='index.html'">Back to Home</button>
+  <button class="btn next-btn" onclick="window.location.href='yesno.html'">Next ➡️</button>
+  
+  <!-- Play Music Button -->
+  <button class="btn music-btn" onclick="playMusic()">🎵 Play Music</button>
+</div>
+
+<script>
+  function playMusic() {
+    var music = document.getElementById("bg-music");
+    music.play();
+  }
+</script>
+
+</body>
+</html>
+
+
